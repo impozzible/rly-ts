@@ -70,7 +70,7 @@ export const estimateSwap = async (
     tx,
     walletPubKey,
     connection,
-    { commitment: "confirmed", preflightCommitment: "processed" },
+    { commitment: "finalized", preflightCommitment: "finalized" },
     [userSourceTokenAccount, userDestinationTokenAccount]
   );
   if (err) {
